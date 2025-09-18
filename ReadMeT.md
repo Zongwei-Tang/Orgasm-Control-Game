@@ -26,11 +26,6 @@ The **Orgasm Control Timer** is a Chrome extension designed to enhance adult con
 - **Settings Popup**: Easily configure session duration, pacing, and audio preferences.
 - **Speed Indicators**: Clear visual cues for fast, slow, or paused states.
 
-### Audio Feedback
-- **Beep Sounds**: Adjustable volume for pacing cues, enhancing immersion.
-- **Directional Tones**: Unique sounds for up and down counts to guide the rhythm.
-- **Background Audio**: Optional ambient tracks to complement the session.
-
 ### Settings
 - **Customizable Options**:
   - Session time limits
@@ -56,8 +51,3 @@ The **Orgasm Control Timer** is a Chrome extension designed to enhance adult con
    - Adjust transparency and audio settings.
 4. Start the session and follow the timer and frequency cues via the draggable overlay.
 5. Use the visual and audio feedback to guide your pacing for an enhanced experience.
-  - Use the **revised README** if you’re targeting a niche audience (e.g., adult content communities) or distributing privately where explicit context is acceptable.
-- **Check Platform Guidelines**: If hosting on a public platform, review their content policies to ensure the README complies, especially if leaning into the adult-oriented purpose.
-- **User Feedback**: If possible, gather input from your target users to see if they prefer a subtle or explicit description.
-
-If you want to blend elements of both versions or need further tweaks (e.g., more explicit, less explicit, or tailored for a specific platform), let me know, and I can refine it further!
