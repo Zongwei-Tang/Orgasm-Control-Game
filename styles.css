@@ -1,0 +1,402 @@
+/* Video Timer Extension Styles */
+
+.video-timer-controls {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  min-width: 280px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.control-panel {
+  position: relative;
+}
+
+.video-timer-overlay {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  min-width: 200px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.timer-display {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.control-panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.drag-handle {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px;
+  text-align: center;
+  border-radius: 6px;
+  cursor: move;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.drag-handle:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.random-freq {
+  color: #FF9800;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.infinite-indicator {
+  color: #9C27B0;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 8px;
+  background: rgba(156, 39, 176, 0.1);
+  border-radius: 4px;
+  border: 1px solid rgba(156, 39, 176, 0.3);
+}
+
+.speed-indicator {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.speed-fast {
+  color: #FF5722;
+  text-shadow: 0 0 4px rgba(255, 87, 34, 0.4);
+}
+
+.speed-slow {
+  color: #2196F3;
+  text-shadow: 0 0 4px rgba(33, 150, 243, 0.4);
+}
+
+.speed-stop {
+  color: #FFC107;
+  text-shadow: 0 0 4px rgba(255, 193, 7, 0.4);
+}
+
+.freq-change-tooltip {
+  position: absolute;
+  top: -35px;
+  right: 10px;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  z-index: 10001;
+  animation: tooltipFadeIn 0.3s ease-out;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.freq-change-tooltip.fast {
+  background: rgba(255, 87, 34, 0.9);
+}
+
+.freq-change-tooltip.slow {
+  background: rgba(33, 150, 243, 0.9);
+}
+
+.freq-change-tooltip.fast::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  right: 15px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid rgba(255, 87, 34, 0.9);
+}
+
+.freq-change-tooltip.slow::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  right: 15px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid rgba(33, 150, 243, 0.9);
+}
+
+@keyframes tooltipFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-5px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.timer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.time-display {
+  font-weight: bold;
+  color: #4CAF50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+
+.time-remaining {
+  font-weight: bold;
+  color: #4CAF50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.frequency-counter {
+  color: #2196F3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.control-buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.control-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  min-width: 65px;
+}
+
+.start-btn {
+  background: linear-gradient(135deg, #4CAF50, #45a049);
+  color: white;
+}
+
+.start-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #45a049, #3d8b40);
+  transform: translateY(-1px);
+}
+
+.pause-btn {
+  background: linear-gradient(135deg, #FF9800, #f57c00);
+  color: white;
+}
+
+.pause-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #f57c00, #ef6c00);
+  transform: translateY(-1px);
+}
+
+.end-btn {
+  background: linear-gradient(135deg, #F44336, #d32f2f);
+  color: white;
+}
+
+.end-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #d32f2f, #c62828);
+  transform: translateY(-1px);
+}
+
+.orgasm-button-container {
+  margin-top: 8px;
+  text-align: center;
+}
+
+.orgasm-btn {
+  background: linear-gradient(135deg, #E91E63, #C2185B);
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 11px;
+}
+
+.orgasm-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #C2185B, #AD1457);
+  transform: translateY(-1px);
+}
+
+.control-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+#timer-time, #timer-seconds {
+  font-size: 18px;
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+#frequency-count {
+  font-size: 16px;
+  font-weight: bold;
+  color: #2196F3;
+}
+
+#direction {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #FF9800;
+}
+
+.video-timer-over {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10001;
+  background: linear-gradient(45deg, #FF5722, #F44336);
+  color: white;
+  padding: 30px 50px;
+  border-radius: 15px;
+  font-family: Arial, sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  animation: fadeInScale 0.3s ease-out, pulse 1s ease-in-out infinite;
+  border: 3px solid white;
+}
+
+.over-text {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .video-timer-controls {
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    min-width: auto;
+    font-size: 12px;
+    padding: 15px;
+  }
+
+  .video-timer-overlay {
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    min-width: auto;
+    font-size: 12px;
+  }
+
+  .video-timer-over {
+    padding: 20px 30px;
+    font-size: 24px;
+    margin: 0 20px;
+  }
+
+  .control-buttons {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .control-btn {
+    min-width: auto;
+    width: 100%;
+  }
+}
+
+/* Ensure overlay doesn't interfere with video controls */
+.video-timer-overlay:hover {
+  opacity: 0.7;
+}
+
+/* Animation for counter changes */
+#frequency-count {
+  transition: all 0.2s ease;
+}
+
+#frequency-count.counting-up {
+  color: #4CAF50;
+}
+
+#frequency-count.counting-down {
+  color: #FF5722;
+}

@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Orgasm Control Game",
+  "version": "1.0",
+  "description": "Orgasm Control Game with frequency controls",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.pornhub.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Orgasm Control Game Settings",
+    "default_icon": "51lbXlcwJWL._UF1000,1000_QL80_.jpg"
+  },
+  "icons": {
+    "128": "51lbXlcwJWL._UF1000,1000_QL80_.jpg"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["*.mp3"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
