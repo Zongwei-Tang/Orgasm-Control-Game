@@ -1,3 +1,5 @@
+[Objective Description](./README.md) | [Use recommendation](./README_zh.md)
+
 # VideoTimerOverlay Chrome Extension
 
 ## Overview
