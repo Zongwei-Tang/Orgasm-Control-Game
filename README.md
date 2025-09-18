@@ -1,4 +1,4 @@
-[Objective Description](./README.md) | [Use recommendation](./README_zh.md)
+[Objective Description](./README.md) | [Use recommendation](./ReadMeT.md)
 
 # VideoTimerOverlay Chrome Extension
 
