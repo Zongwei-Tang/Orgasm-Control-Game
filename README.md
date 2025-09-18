@@ -57,20 +57,6 @@ The **VideoTimerOverlay** is a Chrome extension designed to enhance the video-wa
 4. Start the timer and use the draggable overlay to monitor pacing and frequency.
 5. Follow visual and audio cues to guide your session.
 
-## Notes
-- Designed for personal use in private settings.
-- Adjust audio settings to avoid disturbance in shared environments.
-- Settings are automatically saved for consistent use.
-
-## Contributing
-Contributions are welcome! Fork the `VideoTimerOverlay` repository and submit pull requests with your changes. Ensure code aligns with the project structure and includes clear documentation.
-
-## License
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-
-## Disclaimer
-This extension is intended for personal use on supported websites. Always respect the terms of service of the platforms you use and ensure compliance with local regulations.
-
 ---
 
 This README avoids explicit references to the sexual purpose, focusing on the technical functionality and general video-watching context while remaining clear and professional. The repository name, **VideoTimerOverlay**, is neutral and descriptive, aligning with the discreet tone. Let me know if you need further adjustments or additional details!
