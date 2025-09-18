@@ -1,4 +1,4 @@
-If you are interested in this repo, read this instead: [How should you use it properly?](./ReadMeT.md)
+If you are interested in real use of this repo, read this instead: [How should you use it properly?](./ReadMeT.md)
 
 # VideoTimerOverlay Chrome Extension
 
