@@ -1,4 +1,4 @@
-[Objective Description](./README.md) | [How should you use it properly?](./ReadMeT.md)
+If you are interested in this repo, read this instead: [How should you use it properly?](./ReadMeT.md)
 
 # VideoTimerOverlay Chrome Extension
 
