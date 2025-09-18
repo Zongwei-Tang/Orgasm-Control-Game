@@ -1,4 +1,4 @@
-[Objective Description](./README.md) | [Use recommendation](./ReadMeT.md)
+[Objective Description](./README.md) | [How should you use it properly?](./ReadMeT.md)
 
 # VideoTimerOverlay Chrome Extension
 
@@ -58,7 +58,3 @@ The **VideoTimerOverlay** is a Chrome extension designed to enhance the video-wa
    - Adjust transparency and audio settings.
 4. Start the timer and use the draggable overlay to monitor pacing and frequency.
 5. Follow visual and audio cues to guide your session.
-
----
-
-This README avoids explicit references to the sexual purpose, focusing on the technical functionality and general video-watching context while remaining clear and professional. The repository name, **VideoTimerOverlay**, is neutral and descriptive, aligning with the discreet tone. Let me know if you need further adjustments or additional details!
